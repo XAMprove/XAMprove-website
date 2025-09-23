@@ -8,8 +8,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; 
-      padding: 0;
+      margin: 0; padding: 0;
       background: #f7f9fc;
       color: #333;
       line-height: 1.6;
@@ -27,7 +26,9 @@
       max-width: 900px;
       margin: auto;
     }
-    h2 { color: #003366; }
+    h2 {
+      color: #003366;
+    }
     .cta {
       text-align: center;
       margin: 2rem 0;
@@ -47,18 +48,6 @@
       padding: 1rem;
       margin-top: 2rem;
       font-size: 0.9rem;
-      position: relative;
-    }
-
-    /* Logo rechtsonder, in de flow van de pagina */
-    .logo-bottom-right {
-      display: block;
-      margin-left: auto;
-      margin-right: 20px;
-      margin-top: 20px;
-      width: 100px;                /* pas grootte aan */
-      background-color: #f7f9fc;   /*zelfde als body achtergrond*/
-      border-radius: 8px;          /* optioneel voor afgeronde hoeken */
     }
   </style>
 </head>
@@ -102,8 +91,19 @@
     © 2025 XAMprove – Efficiënter werken. Tevreden klanten. Sterkere teams.
   </footer>
   
-  <!-- Logo rechtsonder, nu niet fixed en achtergrondkleur gelijk aan body -->
   <img src="XAMprove.png" alt="Logo" class="logo-bottom-right">
 
+  <style>
+  .logo-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;   /* pas grootte aan */
+   /* opacity: 0.8;  /* iets transparant */
+  }
+  .logo-bottom-right:hover {
+    opacity: 1;    /* helder bij hover */
+  }
+</style>
 </body>
 </html>
