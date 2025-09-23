@@ -48,29 +48,6 @@
       margin-top: 2rem;
       font-size: 0.9rem;
     }
-
-    /* Contact + logo in één rij */
-    .contact-logo-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    .contact-info {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .contact-info a {
-      color: #003366;
-      text-decoration: none;
-    }
-    .contact-logo-row img {
-      width: 200px;     /* zelfde "gewicht" als contactblok */
-      height: auto;
-      background-color: #f7f9fc; /* zelfde kleur als de body */
-    }
   </style>
 </head>
 <body>
@@ -98,15 +75,16 @@
     </ul>
   </section>
 
-  <!-- Contact + logo naast elkaar -->
-  <div class="contact-logo-row">
-    <div class="contact-info">
-      <h2>Contact</h2>
+  <section>
+    <h2>Contact</h2>
+    <p>
       📧 <a href="mailto:xamprove@gmail.com">xamprove@gmail.com</a><br>
       📞 <a href="tel:0617294764">06-17294764</a>
+    </p>
+    <div class="cta">
+      <a href="mailto:xamprove@gmail.com">Neem contact op</a>
     </div>
-    <img src="XAMprove.png" alt="Logo">
-  </div>
+  </section>
 
   <footer>
     © 2025 XAMprove – Efficiënter werken. Tevreden klanten. Sterkere teams.
