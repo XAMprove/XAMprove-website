@@ -58,7 +58,24 @@
     ul { padding-left: 1.2rem; }
 
     .cta { text-align: center; margin: 2.5rem 0 1rem; }
-    .cta a {
+
+    .contact-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin: 0.3rem 0;
+      background: none;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+      color: #001d40;
+    }
+
+    .cta-button {
       background: var(--primary);
       color: white;
       padding: 0.9rem 1.8rem;
@@ -66,8 +83,13 @@
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
+      display: inline-block;
+      margin-top: 1rem;
     }
-    .cta a:hover { background: #00224d; }
+
+    .cta-button:hover {
+      background: #00224d;
+    }
 
     footer {
       background: var(--primary);
@@ -95,7 +117,7 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="over_mij_xamprove.html">Over mij</a>
+    <a href="over-mij.html">Over mij</a>
     <a href="mailto:xamprove@gmail.com">Contact</a>
   </nav>
 
@@ -129,9 +151,12 @@
 
     <section class="cta">
       <h2>Contact</h2>
-      <p>📧 <a href='mailto:xamprove@gmail.com'>xamprove@gmail.com</a><br>
-      📞 <a href='tel:0617294764'>06-17294764</a><br>KVK: 98412612</p>
-      <a href='mailto:xamprove@gmail.com'>Neem contact op</a>
+      <p>
+        <a class="contact-link" href="mailto:xamprove@gmail.com">xamprove@gmail.com</a><br>
+        <a class="contact-link" href="tel:0617294764">06-17294764</a><br>
+        <span>KVK: 98412612</span>
+      </p>
+      <a class="cta-button" href="mailto:xamprove@gmail.com">Neem contact op</a>
     </section>
   </main>
 
