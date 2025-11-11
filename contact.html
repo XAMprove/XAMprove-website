@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactformulier | XAMprove</title>
+  <meta name="description" content="Neem contact op met XAMprove voor aftersales optimalisatie en communicatietrainingen.">
+  <link rel="icon" type="image/png" href="XAMprove.png">
+  <style>
+    :root {
+      --primary: #003366;
+      --background: #f8fafc;
+      --text: #333;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav {
+      background: #002855;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    header h1 { margin: 0.5rem 0 0; font-size: 2.4rem; }
+    header p { margin: 0.5rem 0 1rem; font-size: 1.2rem; opacity: 0.9; }
+
+    main {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00224d;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.95rem;
+      margin-top: 3rem;
+    }
+  </style>
+   <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGWBZ7J88M"></script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RGWBZ7J88M');
+ </script>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <p>We horen graag van je – XAMprove</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="over-mij.html">Over mij</a>
+    <a href="contact.html">Contactformulier</a>
+  </nav>
+
+  <main>
+    <form action="mailto:xamprove@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Naam contactpersoon *</label>
+      <input type="text" id="name" name="Naam contactpersoon" placeholder="Voornaam + Achternaam" required>
+
+      <label for="company">Naam bedrijf</label>
+      <input type="text" id="company" name="Naam bedrijf" placeholder="Bedrijfsnaam">
+
+      <label for="phone">Telefoonnummer</label>
+      <input type="tel" id="phone" name="Telefoonnummer" placeholder="06-12345678">
+
+      <label for="contactmethod">Voorkeurscontact *</label>
+      <select id="contactmethod" name="Voorkeurscontact" required>
+        <option value="">-- Kies een optie --</option>
+        <option value="E-mail">E-mail</option>
+        <option value="Telefoon">Telefoon</option>
+      </select>
+
+      <label for="message">Opmerkingen (max. 500 woorden)</label>
+      <textarea id="message" name="Opmerkingen" maxlength="4000" placeholder="Beschrijf kort waarom je contact wilt opnemen..."></textarea>
+
+      <button type="submit">Verstuur formulier</button>
+    </form>
+  </main>
+
+  <footer>
+   © 2025 XAMprove – Efficiënter werken. Tevreden klanten. Sterkere teams.
+  </footer>
+</body>
+</html>
